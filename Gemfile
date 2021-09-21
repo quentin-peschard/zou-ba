@@ -24,6 +24,19 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'pundit'
+# To authorize users to manage their trips
+gem 'cloudinary', '~> 1.16.0'
+# Use to stroe places pictures
+gem 'geocoder'
+# Use to pin places on the map
+gem 'devise'
+# Use to create user profiles
+gem 'font-awesome-sass'
+
+gem 'actionmailer', '~> 6.0', '>= 6.0.4.1'
+
+gem 'simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
