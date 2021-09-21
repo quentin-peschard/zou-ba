@@ -1,8 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="container">
+    <h1>走吧 !</h1>
+    <p>Organize your next adventures with ZouBa</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
 <% @places.each do|place| %>
   <h2><%= place.name %></h2>
   <p><%= place.description %></p>
 <% end %>
-<%= current_user %>
 <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/quentin-peschard"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/quentin-peschard/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://quentin-peschard.github.io/my_profile/"><i class="fas fa-user"></i></a>
+  </div>
+</div>
